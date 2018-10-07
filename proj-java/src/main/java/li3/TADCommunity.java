@@ -9,6 +9,7 @@ import common.Pair;
 import javax.xml.stream.XMLStreamException;
 
 public interface TADCommunity {
+    // Load
     public void load(String dumpPath) throws FileNotFoundException, XMLStreamException, ParseException;
 
     // Query 1
@@ -44,6 +45,7 @@ public interface TADCommunity {
     // Query 11
     public List<Long> mostUsedBestRep(int N, LocalDate begin, LocalDate end);
 
+    // Clean-up
     public void clear();
 }
 
